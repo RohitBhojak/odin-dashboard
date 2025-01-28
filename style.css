@@ -2,6 +2,8 @@
 
 :root {
     font-size: 62.5%;
+    --blue: #0d6efd;
+    --white: #f5f5f5;
 }
 
 * {
@@ -16,25 +18,37 @@
 body {
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
 }
 
 .sidebar {
     grid-row: span 2;
-    background-color: aqua;
+    background-color: var(--blue);
     font-weight: 500;
     font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    color: var(--white);
+}
+
+.sidebar img {
+    filter: brightness(0) invert(1);
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 30px;
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 2.6rem;
     display: flex;
-    gap: 1rem;
+    gap: 10px;
     align-items: center;
-    padding: 2rem;
+    padding: 10px;
 }
