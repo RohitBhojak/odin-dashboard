@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+    font-size: 62.5%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,4 +25,16 @@ body {
     grid-row: span 2;
     background-color: aqua;
     font-weight: 500;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 3rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem;
 }
