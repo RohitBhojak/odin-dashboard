@@ -36,6 +36,8 @@ body {
     flex-direction: column;
     gap: 30px;
     color: var(--white);
+    z-index: 200;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar img {
@@ -125,13 +127,14 @@ body {
 /* content */
 .content {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--gray);
     padding: 30px 20px;
     gap: 20px;
 }
 
+/* projects */
 .projects {
     grid-row: span 2;
 }
@@ -149,10 +152,10 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 20px;
     justify-content: space-between;
-    border-left: orange 10px solid;
+    border-left: orange 8px solid;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -164,4 +167,29 @@ body {
     align-self: end;
     display: flex;
     gap: 15px;
+}
+
+/* announcements */
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
+
+.announce-card {
+    font-size: 1.2rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    flex: 1;
+}
+
+.announce-card p {
+    color: var(--card-text);
+}
+
+hr {
+    margin: 15px 0;
+    color: var(--card-text);
 }
