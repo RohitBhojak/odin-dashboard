@@ -170,12 +170,12 @@ body {
 }
 
 /* announcements */
-.announcements {
+.announcements, .trending {
     display: flex;
     flex-direction: column;
 }
 
-.announce-card {
+.announce-card, .trend-card {
     font-size: 1.2rem;
     background-color: white;
     padding: 20px;
@@ -191,5 +191,29 @@ body {
 
 hr {
     margin: 15px 0;
+    color: var(--card-text);
+}
+
+/* trending */
+
+.trend-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trend-card .user {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 16px 1fr;
+    column-gap: 10px;
+}
+
+.trend-card .user img {
+    grid-row: span 2;
+    align-self: center;
+}
+
+.trend-card .user p {
     color: var(--card-text);
 }
