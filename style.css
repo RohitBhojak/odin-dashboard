@@ -20,8 +20,7 @@ body {
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
-    height: 100vh;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     font-size: 1.6rem;
 }
 
@@ -102,12 +101,6 @@ body {
 .user-info .text {
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.greet {
-    font-size: 1.2rem;
 }
 
 .action {
@@ -125,4 +118,23 @@ body {
     border: none;
     border-radius: 25px;
     height: 30px;
+}
+
+/* content */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-row: span 2;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 20px;
+    padding: 20px;
 }
